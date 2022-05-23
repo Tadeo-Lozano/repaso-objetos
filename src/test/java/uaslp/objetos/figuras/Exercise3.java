@@ -56,7 +56,6 @@ public class Exercise3 {
 
         assertFalse(ex instanceof DatoFaltanteException);
         assertEquals("Número de lados válido a partir de 5", ex.getMessage());
-
     }
 
 }

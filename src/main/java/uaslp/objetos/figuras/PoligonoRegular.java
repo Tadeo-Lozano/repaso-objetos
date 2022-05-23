@@ -10,8 +10,10 @@ public class PoligonoRegular extends Figura{
 
     public PoligonoRegular(int numeroDeLados){
         super("Poligono Regular");
+        if(numeroDeLados<5){
+            throw new NumeroInvalidoDeLados("Número de lados válido a partir de 5");
+        }
         this.numeroDeLados = numeroDeLados;
-
     }
 
     public PoligonoRegular(int numeroDeLados, double lado){

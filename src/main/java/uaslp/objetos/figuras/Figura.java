@@ -10,5 +10,7 @@ abstract class Figura extends DrawableItem{
     public String getName(){
         return name;
     }
+
+    public abstract double getArea() throws LadoNoProvistoException;
 }
 

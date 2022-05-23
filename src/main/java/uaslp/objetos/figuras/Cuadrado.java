@@ -18,8 +18,11 @@ public class Cuadrado extends Figura{
         this.lado=lado;
     }
 
-    public double getArea(){
+    public double getArea() {
         area = lado*lado;
+        if(lado == 0){
+            throw new LadoNoProvistoException();
+        }
         return area;
     }
 
