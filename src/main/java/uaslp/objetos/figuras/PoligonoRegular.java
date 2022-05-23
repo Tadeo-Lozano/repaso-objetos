@@ -3,15 +3,19 @@ package uaslp.objetos.figuras;
 import static java.lang.Math.tan;
 import static java.lang.Math.tanh;
 
-public class PoligonoRegular {
+public class PoligonoRegular extends Figura{
     private int numeroDeLados;
     private double lado;
     private double ap;
+
     public PoligonoRegular(int numeroDeLados){
+        super("Poligono Regular");
         this.numeroDeLados = numeroDeLados;
+
     }
 
     public PoligonoRegular(int numeroDeLados, double lado){
+        super("Poligono Regular");
         this.numeroDeLados = numeroDeLados;
         this.lado = lado;
     }
