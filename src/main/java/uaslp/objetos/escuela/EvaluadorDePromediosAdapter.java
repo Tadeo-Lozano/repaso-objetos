@@ -12,6 +12,7 @@ public class EvaluadorDePromediosAdapter {
     }
 
     public double evalua(String calis){
+
         List<String> calificacionesString = Arrays.asList(calis.split(","));
         List<Double> calificaciones = new ArrayList<>();
         for (String calificacion : calificacionesString)
