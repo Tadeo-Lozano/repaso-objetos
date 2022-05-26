@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class Exercise6 {
+public class Exercise6{
 
      /*
     INSTRUCCIONES EJERCICIO 6:
@@ -18,6 +18,25 @@ public class Exercise6 {
     modificar el test existente "validarInterfacesCreadas"
 
      */
+
+    @Test
+    public void validarAlgoritmoACubrir(){
+        //Given
+        Dependencia1 d1 = new Dependencia1() {
+            @Override
+            public void save(String c) {
+
+            }
+        };
+        Dependencia2 d2;
+        Dependencia3 d3;
+
+        AlgoritmoX algoritmoX = new AlgoritmoX(Dependencia1);
+
+        //When
+
+        //Then
+    }
 
     @Test
     public void validarInterfacesCreadas(){
